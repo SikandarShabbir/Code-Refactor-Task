@@ -1,45 +1,59 @@
-Do at least ONE of the following tasks: refactor is mandatory. Write tests is optional, will be good bonus to see it. 
-Please do not invest more than 2-4 hours on this.
-Upload your results to a Github repo, for easier sharing and reviewing.
 
-Thank you and good luck!
+Generic coding and applications development practices:
 
+You can make use of the SOLID principles to develop an application with better code management and coding standards with the help of following principles:
+S — Single Responsibility Principle (SRP):
+A class/function should have only one responsibility. It means that a class should have a single responsibility or purpose.
+O — Open-Closed Principle (OCP):
+A class should be open for extension, but closed for modification. It means that you should be able to add new functionality or behaviors to a class without modifying its existing code.
+L — Liskov Substitution Principle (LSP):
+A subclass should be substitutable for its parent class. It guarantees that subclasses and their base classes can be used interchangeably without generating any unexpected behaviour.
+I — Interface Segregation Principle (ISP):
+A client should not be forced to depend on methods that it does not use. This principle emphasizes the segregation of interfaces into smaller, more specific ones. It guarantees that subclasses and their base classes can be used interchangeably without generating any unexpected behaviour.
+D — Dependency Inversion Principle (DIP):
+It emphasises the use of interfaces or abstract classes to specify dependencies and encourages loose coupling between classes.
 
+You can utilize PSR standards to make nature of code streamline.
+Make use of static analysis tools find bugs before the code execution.
+Make use of DRY(Don't repeat yourself) concept while developing code.
 
-Code to refactor
-=================
-1) app/Http/Controllers/BookingController.php
-2) app/Repository/BookingRepository.php
+Regarding Application development following points should be in mind to develop a robust and large-scale application:
 
-Code to write tests (optional)
-=====================
-3) App/Helpers/TeHelper.php method willExpireAt
-4) App/Repository/UserRepository.php, method createOrUpdate
+Scalable Architecture:
+Use microservices architecture, distributed systems, and horizontal scaling techniques to ensure scalability.
 
+Optimized Database Design:
+Design an optimized database schema with proper indexing, partitioning, and sharding strategies to handle large datasets efficiently.
 
-----------------------------
+Caching Strategies:
+Implement caching mechanisms to reduce database load and improve performance. Use in-memory caches like Redis or Memcached to store frequently accessed data.
 
-What I expect in your repo:
+Asynchronous Processing:
+Offload time-consuming tasks to background jobs or queues using asynchronous processing.
 
-X. A readme with:   Your thoughts about the code. What makes it amazing code. Or what makes it ok code. Or what makes it terrible code. How would you have done it. Thoughts on formatting, structure, logic.. The more details that you can provide about the code (what's terrible about it or/and what is good about it) the easier for us to assess your coding style, mentality etc
+Load Balancing:
+Use load balancers to distribute incoming traffic across multiple servers or instances to ensure high availability and fault tolerance.
 
-And 
+Performance Optimization:
+Write efficient and optimized code/queries to minimize resource consumption and improve performance.
 
-Y.  Refactor it if you feel it needs refactoring. The more love you put into it. The easier for us to asses your thoughts, code principles etc
+Monitoring and Analytics:
+Implement monitoring and analytics tools to track application performance, user behavior, and system health.
 
+Security Best Practices:
+Use encryption, authentication, authorization, and security headers to secure the application.
 
-IMPORTANT: Make two commits. First commit with original code. Second with your refactor so we can easily trace changes. 
+Automated Testing:
+Implement automated testing practices, including unit tests, integration tests, and performance tests, to ensure code quality, reliability, and scalability.
 
+Continuous Integration and Deployment (CI/CD):
+Implement CI/CD pipelines to automate the build, testing, and deployment process.
 
-NB: you do not need to set up the code on local and make the web app run. It will not run as its not a complete web app. This is purely to assess you thoughts about code, formatting, logic etc
+Documentation and Code Comments:
+Maintain comprehensive documentation and code comments to facilitate collaboration, code review, and future maintenance.
 
-
-===== So expected output is a GitHub link with either =====
-
-1. Readme described above (point X above) + refactored code 
-OR
-2. Readme described above (point X above) + refactored core + a unit test of the code that we have sent
-
-Thank you!
-
-
+Regarding Application code:
+The provided code is well planned, organized, and used repository design pattern.
+Further I have added the comments to each line of the provided files where needed.
+I have updated the BookingController file code and BookingRepository code upto updateJob() method, please see the commit of refactored code.
+Hope its enough to access my thoughts and skillset regarding application plan from scratch and development as well.
